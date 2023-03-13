@@ -14,6 +14,9 @@ import { pink } from "@mui/material/colors";
 import SvgIcon from "@mui/material/SvgIcon";
 import { TextField } from "@mui/material";
 import { Email } from "@mui/icons-material";
+import { AccessAlarm, ThreeDRotation } from "@mui/icons-material";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -29,25 +32,6 @@ function Contact() {
       <Typography variant="h2" style={{ color: "white", textAlign: "center" }}>
         Contact
       </Typography>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 12, sm: 6, md: 4 }}
-      >
-        <Grid item xs={12} sm={6} md={4}>
-          <a href="https://github.com/HenryJamesGreen" target={"_blank"}>
-            <Item>GitHub</Item>
-          </a>
-        </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <a
-            href="https://www.linkedin.com/in/henryjamesgreen/"
-            target={"_blank"}
-          >
-            <Item>linkedin</Item>
-          </a>
-        </Grid>
-      </Grid>
       <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
         <CardContent>
           <Typography gutterBottom variant="h5">
@@ -125,6 +109,21 @@ function Contact() {
           </form>
         </CardContent>
       </Card>
+      <Grid
+        container
+        spacing={{ xs: 2, md: 3 }}
+        columns={{ xs: 12, sm: 6, md: 4 }}
+      >
+      </Grid>
+      <a href="https://github.com/HenryJamesGreen" target={"_blank"}>
+      <FaGithub className="icons youtube" style={{fontSize: "120px"}} />
+      </a>
+      <a
+            href="https://www.linkedin.com/in/henryjamesgreen/"
+            target={"_blank"}
+          >
+      <FaLinkedin className="icons linkedin" style={{fontSize: "120px"}}/>
+      </a>
     </Box>
   );
 }
