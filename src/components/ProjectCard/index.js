@@ -11,14 +11,7 @@ function ProjectCard(props) {
       </div>
       <div className="content">
         <ul>
-          <li>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Link:</strong> {props.deployed}
-          </li>
-          <li>
-            <strong>Repo Link:</strong> {props.repo}
+          <li> {props.name}
           </li>
         </ul>
       </div>

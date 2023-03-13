@@ -2,43 +2,49 @@
   {
     "id": 1,
     "name": "Team profile Generator",
+    "description": "An application designed to take user-inputted information about employees on a software engineering team, that then generates an HTML webpage that displays summaries for each person.",
     "image": "/images/TPG.png",
-    "deployed": "Fry Cook",
+    "deployed": "N/A",
     "repo": "https://github.com/HenryJamesGreen/henrys-team-profile-generator.git"
   },
   {
     "id": 2,
     "name": "Professional README generator",
-    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
+    "description": "A command-line application that dynamically generates a professional README.md file from a user's input.",
+    "image": "/images/READMEgen.png",
     "deployed": "Fry Cook",
     "repo": "https://github.com/HenryJamesGreen/henrys-professional-readme-generator.git"
   },
   {
     "id": 3,
+    "name": "Pokemon Quiz",
+    "image": "/images/pokequiz.png",
+    "description": "This project is a personality quiz, where you can find out your inner Pokemon.",
+    "deployed": "https://eliza-an.github.io/pokepod-pokemon-quiz/",
+    "repo": "https://github.com/eliza-an/pokepod-pokemon-quiz.git"
+  },
+  {
+    "id": 4,
     "name": "Weather Dashboard App",
-    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+    "description": "A weather app where you can view the forecast for the cities of your choosing.",
+    "image": "/images/weather-dash.png",
     "deployed": "https://henryjamesgreen.github.io/weather-dashboard/",
     "repo": "https://github.com/HenryJamesGreen/weather-dashboard.git"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Code Quiz",
-    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
+    "description": "A code quiz that asks you questions about JavaScript, and presents you with your highscores at the end.",
+    "image": "/images/code-quiz.png",
     "deployed": "https://henryjamesgreen.github.io/code-quiz/",
     "repo": "https://github.com/HenryJamesGreen/code-quiz.git"
   },
   {
-    "id": 5,
-    "name": "Courage",
-    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
+    "id": 6,
+    "name": "Daily Planner App",
+    "description": "A daily planner application, made using jQuery",
+    "image": "/images/DPA.png",
     "deployed": "https://henryjamesgreen.github.io/daily-planner-app/",
     "repo": "https://github.com/HenryJamesGreen/daily-planner-app.git"
-  },
-  {
-    "id": 6,
-    "name": "Password Generator",
-    "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
-    "deployed": "https://henryjamesgreen.github.io/password-generator/",
-    "repo": "https://github.com/HenryJamesGreen/password-generator.git"
   }
 ]
