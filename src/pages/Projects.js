@@ -4,6 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import Title from "../components/Title";
 import projectData from "../projects.json";
 import { useState } from "react";
+import { Grid } from "@mui/material";
 
 function Projects() {
   // Here we set the state for friends and also create a function to update it.
@@ -14,18 +15,22 @@ function Projects() {
   return (
     <Wrapper>
       <Title>Projects</Title>
-      {projects.map((project) => (
-        <ProjectCard
-          id={project.id}
-          key={project.id}
-          name={project.name}
-          image={project.image}
-          deployed={project.deployed}
-          repo={project.repo}
-        />
-      ))}
+      <Grid container spacing={2} justifyContent="center">
+        {projects.map((project) => (
+          <Grid item xs={12} sm={6} md={4}>
+            <ProjectCard
+              id={project.id}
+              key={project.id}
+              name={project.name}
+              image={project.image}
+              deployed={project.deployed}
+              repo={project.repo}
+            />
+          </Grid>
+        ))}
+      </Grid>
     </Wrapper>
   );
-};
+}
 
 export default Projects;

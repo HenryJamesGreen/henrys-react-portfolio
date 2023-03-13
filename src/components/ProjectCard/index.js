@@ -1,21 +1,29 @@
 import React from "react";
 import "./style.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import { Grid } from '@mui/material';
 
 function ProjectCard(props) {
   return (
     <Link to={`/details/${props.id}`}>
-    <div className="card">
-      <div className="img-container">
-        <img alt={props.name} src={props.image} />
-      </div>
-      <div className="content">
-        <ul>
-          <li> {props.name}
-          </li>
-        </ul>
-      </div>
-    </div>
+      <Card sx={{ maxWidth: 345 , margin: 5 , alignItems: "center"}}>
+      <CardMedia
+        sx={{ height: 140 }}
+        image={props.image}
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          {props.name}
+        </Typography>
+      </CardContent>
+    </Card>
     </Link>
   );
 }
