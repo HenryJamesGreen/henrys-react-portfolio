@@ -17,6 +17,7 @@ import { Email } from "@mui/icons-material";
 import { AccessAlarm, ThreeDRotation } from "@mui/icons-material";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -32,6 +33,7 @@ function Contact() {
       <Typography variant="h2" style={{ color: "white", textAlign: "center" }}>
         Contact
       </Typography>
+
       <Card style={{ maxWidth: 450, margin: "0 auto", padding: "20px 5px" }}>
         <CardContent>
           <Typography gutterBottom variant="h5">
@@ -120,8 +122,20 @@ function Contact() {
         style={{ marginTop: "10px" }}
       >
         <Grid item>
+          <a href="./images/henryjamesgreenresume.pdf" target="_blank">
+            <FaFilePdf
+              className="icons linkedin"
+              style={{ fontSize: 150, color: "White" }}
+            />
+          </a>
+        </Grid>
+
+        <Grid item>
           <a href="https://github.com/HenryJamesGreen" target="_blank">
-            <FaGithub className="icons youtube" style={{ fontSize: 150 , color: "White" }} />
+            <FaGithub
+              className="icons youtube"
+              style={{ fontSize: 150, color: "White" }}
+            />
           </a>
         </Grid>
         <Grid item>
@@ -129,7 +143,10 @@ function Contact() {
             href="https://www.linkedin.com/in/henryjamesgreen/"
             target="_blank"
           >
-            <FaLinkedin className="icons linkedin" style={{ fontSize: 150 , color: "White" }} />
+            <FaLinkedin
+              className="icons linkedin"
+              style={{ fontSize: 150, color: "White" }}
+            />
           </a>
         </Grid>
       </Grid>
