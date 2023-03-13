@@ -8,7 +8,7 @@ import { useState } from "react";
 function Projects() {
   // Here we set the state for friends and also create a function to update it.
   // Set the initial value to friendsData imported from the json file
-  const [projects, setFriends] = useState(projectData);
+  const [projects, setProjects] = useState(projectData);
 
   // Map over friends and render a FriendCard component for each friend object
   return (
