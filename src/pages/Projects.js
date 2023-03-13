@@ -13,7 +13,7 @@ function Projects() {
   // Map over friends and render a FriendCard component for each friend object
   return (
     <Wrapper>
-      <Title>Friends List</Title>
+      <Title>Projects</Title>
       {projects.map((project) => (
         <ProjectCard
           id={project.id}

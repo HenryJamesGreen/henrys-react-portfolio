@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ResponsiveAppBar from "./pages/Header";
 import About from "./pages/About";
+import ProjectDetails from "./pages/ProjectDetails";
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/projects" element={<Projects/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/details/:id" element={<ProjectDetails />} />
         </Routes>
     </Router>
   );
