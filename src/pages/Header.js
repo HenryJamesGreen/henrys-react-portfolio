@@ -7,11 +7,18 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import AdbIcon from "@mui/icons-material/Adb";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import { Link, NavLink } from 'react-router-dom';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import myImage from '../images/headshot1.png';
 
 const pages = ["About", "Projects", "Contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -50,9 +57,9 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            HG
           </Typography>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Avatar alt="Henry" src={myImage} />
           <Typography
             variant="h5"
             noWrap
@@ -69,9 +76,8 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "flex" } }}>
             {pages.map((page) => (
               <Typography
                 key={page}
