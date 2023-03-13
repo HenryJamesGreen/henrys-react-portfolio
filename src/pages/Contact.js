@@ -43,7 +43,11 @@ function Contact() {
             variant="body2"
             component="p"
           >
-            Fill out the form and I'll get back to you as soon as possible!
+            Contact me at{" "}
+            <a href="mailto:henryjamesgreen92@gmail.com">
+              henryjamesgreen92@gmail.com
+            </a>{" "}
+            , or simply fill out this form!
           </Typography>
           <form>
             <Grid container spacing={1}>
@@ -111,19 +115,24 @@ function Contact() {
       </Card>
       <Grid
         container
-        spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 12, sm: 6, md: 4 }}
+        spacing={2}
+        justifyContent="center"
+        style={{ marginTop: "10px" }}
       >
-      </Grid>
-      <a href="https://github.com/HenryJamesGreen" target={"_blank"}>
-      <FaGithub className="icons youtube" style={{fontSize: "120px"}} />
-      </a>
-      <a
+        <Grid item>
+          <a href="https://github.com/HenryJamesGreen" target="_blank">
+            <FaGithub className="icons youtube" style={{ fontSize: 150 , color: "White" }} />
+          </a>
+        </Grid>
+        <Grid item>
+          <a
             href="https://www.linkedin.com/in/henryjamesgreen/"
-            target={"_blank"}
+            target="_blank"
           >
-      <FaLinkedin className="icons linkedin" style={{fontSize: "120px"}}/>
-      </a>
+            <FaLinkedin className="icons linkedin" style={{ fontSize: 150 , color: "White" }} />
+          </a>
+        </Grid>
+      </Grid>
     </Box>
   );
 }
