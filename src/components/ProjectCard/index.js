@@ -13,16 +13,13 @@ function ProjectCard(props) {
             <strong>Name:</strong> {props.name}
           </li>
           <li>
-            <strong>Occupation:</strong> {props.occupation}
+            <strong>Link:</strong> {props.deployed}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Repo Link:</strong> {props.repo}
           </li>
         </ul>
       </div>
-      <span onClick={() => props.removeFriend(props.id)} className="remove">
-        𝘅
-      </span>
     </div>
   );
 }
