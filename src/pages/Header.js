@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import myImage from "../images/headshot1.png";
 import { FaReact } from "react-icons/fa";
 
-const pages = ["home", "projects", "contact"];
+const pages = ["Home", "Projects", "Contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -32,7 +32,7 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="/home">
+          <a href="/">
             <FaReact
               className="icons react"
               style={{ fontSize: 20, color: "White", padding: "" }}
@@ -73,7 +73,7 @@ function ResponsiveAppBar() {
                   <Typography textAlign="center">
                     <Link
                       style={{ textDecoration: "none", color: "black" }}
-                      to={`/${page}`}
+                      to={`/${page.toLowerCase()}`}
                     >
                       {page}
                     </Link>
@@ -82,7 +82,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <a href="/home">
+          <a href="/">
             <Avatar alt="Henry" src={myImage} style={{ padding: "5px" }} />
           </a>
 
@@ -95,7 +95,7 @@ function ResponsiveAppBar() {
               >
                 <Link
                   style={{ textDecoration: "none", color: "white" }}
-                  to={`/${page}`}
+                  to={`/${page.toLowerCase()}`}
                 >
                   {page}
                 </Link>
