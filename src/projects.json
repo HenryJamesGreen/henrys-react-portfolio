@@ -4,7 +4,7 @@
     "name": "Team profile Generator",
     "description": "An application designed to take user-inputted information about employees on a software engineering team, that then generates an HTML webpage that displays summaries for each person.",
     "image": "/images/TPG.png",
-    "deployed": "N/A",
+    "deployed": "",
     "repo": "https://github.com/HenryJamesGreen/henrys-team-profile-generator.git"
   },
   {
@@ -12,7 +12,7 @@
     "name": "README generator",
     "description": "A command-line application that dynamically generates a professional README.md file from a user's input.",
     "image": "/images/READMEgen.png",
-    "deployed": "Fry Cook",
+    "deployed": "",
     "repo": "https://github.com/HenryJamesGreen/henrys-professional-readme-generator.git"
   },
   {

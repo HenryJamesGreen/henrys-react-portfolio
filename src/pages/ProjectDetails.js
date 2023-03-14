@@ -41,14 +41,16 @@ function ProjectDetails() {
           </Typography>
         </CardContent>
         <CardActions sx={{ justifyContent: "center" }}>
-          <Button
-            variant="outlined"
-            size="small"
-            href={project.deployed}
-            target="_blank"
-          >
-            Visit Site
-          </Button>
+          {project.deployed && (
+            <Button
+              variant="outlined"
+              size="small"
+              href={project.deployed}
+              target="_blank"
+            >
+              Visit Site
+            </Button>
+          )}
           <Button
             variant="outlined"
             size="small"
