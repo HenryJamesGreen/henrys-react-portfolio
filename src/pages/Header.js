@@ -38,27 +38,12 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+        <a href="/home">
         <FaReact
-              className="icons linkedin"
-              style={{ fontSize: 20, color: "White" }}
+              className="icons react"
+              style={{ fontSize: 20, color: "White", padding: "" }}
             />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            HG
-          </Typography>
+            </a>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -103,25 +88,9 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <Avatar alt="Henry" src={myImage} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            
-          </Typography>
+          <a href="/home">
+          <Avatar alt="Henry" src={myImage}style={{padding: "5px"}}/></a>
+      
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
