@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: "center",
   color: theme.palette.text.secondary,
 }));
-
+]
 function Contact() {
   return (
     <Box sx={{ flexGrow: 1, m: 1 }}>
