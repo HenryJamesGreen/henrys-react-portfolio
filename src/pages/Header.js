@@ -14,7 +14,7 @@ import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
 import myImage from '../images/headshot1.png';
 
-const pages = ["About", "Projects", "Contact"];
+const pages = ["Home", "Projects", "Contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
