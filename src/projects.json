@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "README generator",
+    "name": "README Generator",
     "description": "A command-line application that dynamically generates a professional README.md file from a user's input.",
     "image": "/images/READMEgen.png",
     "deployed": "",
