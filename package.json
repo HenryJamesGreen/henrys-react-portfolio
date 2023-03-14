@@ -1,6 +1,7 @@
 {
   "name": "henrys-react-portfolio",
   "version": "0.1.0",
+  "homepage": "https://henryjamesgreen.github.io/henrys-react-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "footer": "^1.0.0",
+    "gh-pages": "^5.0.0",
     "header": "^0.1.1",
     "inquirer": "^8.2.5",
     "navbar": "^2.1.0",
@@ -24,6 +26,8 @@
     "wrapper": "^0.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
