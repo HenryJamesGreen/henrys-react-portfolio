@@ -5,6 +5,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ResponsiveAppBar from "./pages/Header";
 import ProjectDetails from "./pages/ProjectDetails";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/details/:id" element={<ProjectDetails />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
