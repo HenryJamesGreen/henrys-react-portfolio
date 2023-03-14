@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function ProjectDetails() {
   let { id } = useParams();
@@ -26,8 +26,12 @@ function ProjectDetails() {
         alignItems: "center",
       }}
     >
-      <Card sx={{ width: 500 }}>
-        <CardMedia sx={{ height: 400 }} image={project.image} title={project.name} />
+      <Card sx={{ width: 500, marginBottom: "200px" }}>
+        <CardMedia
+          sx={{ height: 400 }}
+          image={project.image}
+          title={project.name}
+        />
         <CardContent sx={{ textAlign: "center" }}>
           <Typography gutterBottom variant="h5" component="div">
             {project.name}
@@ -37,10 +41,20 @@ function ProjectDetails() {
           </Typography>
         </CardContent>
         <CardActions sx={{ justifyContent: "center" }}>
-          <Button variant="outlined" size="small" href={project.deployed} target="_blank">
+          <Button
+            variant="outlined"
+            size="small"
+            href={project.deployed}
+            target="_blank"
+          >
             Visit Site
           </Button>
-          <Button variant="outlined" size="small" href={project.repo} target="_blank">
+          <Button
+            variant="outlined"
+            size="small"
+            href={project.repo}
+            target="_blank"
+          >
             View Code
           </Button>
         </CardActions>

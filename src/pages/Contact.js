@@ -119,12 +119,12 @@ function Contact() {
         container
         spacing={2}
         justifyContent="center"
-        style={{ marginTop: "10px" }}
+        style={{ marginTop: "10px", marginBottom: "100px" }}
       >
         <Grid item>
           <a href="./images/henryjamesgreenresume.pdf" target="_blank">
             <FaFilePdf
-              className="icons linkedin"
+              className="icons pdf"
               style={{ fontSize: 150, color: "White" }}
             />
           </a>
