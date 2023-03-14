@@ -21,7 +21,7 @@ function Home() {
             Henry James Green
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            An aspiring frontend developer
+          An aspiring frontend developer who is also an experienced professional musician, tutor and composer, I am used to working in target-driven and results-based environments with people from a diverse range of cultures and backgrounds. Currently studying a Postgraduate Diploma in Law, as well as participating in a course in Frontend Software Development with the Skills for Life organisation, I am keen to develop my new-found love of code and embark on a new, fruitful career.
           </Typography>
         </CardContent>
       </Card>

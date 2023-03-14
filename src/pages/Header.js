@@ -18,7 +18,6 @@ import { FaReact } from "react-icons/fa";
 
 const pages = ["home", "projects", "contact"];
 
-
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -27,23 +26,20 @@ function ResponsiveAppBar() {
     setAnchorElNav(event.currentTarget);
   };
 
-
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
-
 
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <a href="/home">
-        <FaReact
+          <a href="/home">
+            <FaReact
               className="icons react"
               style={{ fontSize: 20, color: "White", padding: "" }}
             />
-            </a>
+          </a>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -89,8 +85,9 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           <a href="/home">
-          <Avatar alt="Henry" src={myImage}style={{padding: "5px"}}/></a>
-      
+            <Avatar alt="Henry" src={myImage} style={{ padding: "5px" }} />
+          </a>
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
@@ -107,7 +104,6 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-
         </Toolbar>
       </Container>
     </AppBar>
